@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+ 
+
+<vType accel="2.0" decel="5.0" id="car" length="5" width="2.5" maxSpeed="60" sigma="0.5" />
+<vType accel="1.0" decel="5.0" id="bike" length="4" width="1.5" maxSpeed="40" sigma="0.5" />
+
+<route id="11" edges="T1 A7 A6 A5 A4 A3 A2 A1"/>
+  <route id="22" edges="-T1 -A1 -A2 -A3 -A4 -A5 -A6 -A7"/>
+  <route id="33" edges="-B7 -B6 -B5 -B4 -B3 -B2 -B1 -T1"/>
+  <route id="44" edges="B1 B2 B3 B4 B5 B6 B7 T1"/>
+
+<flow id="1" type="car" beg="0" end="0" route="11" number="60" color="1,1,1"/> 
+  <flow id="2" type="bike" beg="0" end="0" route="11" number="80" color="1,0,1"/>
+  <flow id="3" type="car" beg="0" end="0" route="22" number="20" color="0,1,1"/> 
+  <flow id="4" type="bike" beg="0" end="0" route="22" number="60" color="0,0,1"/>
+  <flow id="5" type="car" beg="0" end="0" route="33" number="15" color="1,1,0"/> 
+  <flow id="6" type="bike" beg="0" end="0" route="33" number="20" color="0,1,0"/>
+  <flow id="7" type="car" beg="0" end="0" route="44" number="5" color="1,0,0"/> 
+  <flow id="8" type="bike" beg="0" end="0" route="44" number="40" color="1,0,1"/>
+
+  
+</routes>
